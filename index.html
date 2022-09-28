@@ -29,7 +29,7 @@
         }
 
         .active {
-            background-color: #04AA6D;
+            background-color: #04AA6D !important;
             color: white;
         }
 
@@ -52,6 +52,8 @@
             font-family: inherit;
             margin: 0;
         }
+
+
 
         .dropdown-content {
             display: none;
@@ -176,10 +178,11 @@
     </style>
     <script>
         function changeActive(currentNavName, fileName) {
-            // console.log(currentNavName)
+            console.log(currentNavName)
             let navData = ['homenav', 'bussinessnav', 'contactnav', 'aboutnav']
             navData.forEach(e => document.getElementById(e).classList.remove("active"))
             document.getElementById(currentNavName).classList.add("active");
+            console.log(document.getElementById(currentNavName).classList)
             document.getElementById('iFrame').src = fileName
             // console.log(document.getElementById(currentNavName).classList)
         }
@@ -193,17 +196,19 @@
         <a href="#bussiness" onclick="changeActive('bussinessnav','Bussiness.html')" id="bussinessnav">Bussiness</a>
         <a href="#contact" onclick="changeActive('contactnav','contact.html')" id="contactnav">Contact</a>
         <div class="dropdown">
-            <button class="dropbtn">Dropdown
+            <button class="dropbtn" href="#about" id="aboutnav"
+                onclick="changeActive('aboutnav','./About/Overview.html')">
+                About
                 <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+                <a href="#" onclick="changeActive('aboutnav','./About/Overview.html')" id="aboutnav">Overview</a>
+                <a href="#" onclick="changeActive('aboutnav','./About/Management.html')" id="aboutnav">Management</a>
+                <a href="#" onclick="changeActive('aboutnav','./About/Directors.html')" id="aboutnav">Directors</a>
             </div>
         </div>
 
-        <a href="#about" id="aboutnav" onclick="changeActive('aboutnav','About.html')">About</a>
+
         <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
 
