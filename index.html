@@ -13,7 +13,7 @@
         .topnav {
             overflow: hidden;
             background-color: #333;
-            position: fixed;
+            /* position: fixed; */
             top: 0;
             width: 100%;
         }
@@ -59,7 +59,7 @@
             background-color: #f9f9f9;
             min-width: 160px;
             box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 1;
+            z-index: 10;
         }
 
         .dropdown-content a {
@@ -83,7 +83,9 @@
         }
 
         .dropdown:hover .dropdown-content {
-            display: block;
+            display: flex;
+            z-index: 10;
+            position: absolute;
         }
 
         @media screen and (max-width: 600px) {
@@ -168,6 +170,8 @@
             width: 98.9vw;
             height: 97vh;
             margin: 0;
+            position: absolute;
+            z-index: -1;
         }
     </style>
     <script>
@@ -198,11 +202,12 @@
                 <a href="#">Link 3</a>
             </div>
         </div>
+
         <a href="#about" id="aboutnav" onclick="changeActive('aboutnav','About.html')">About</a>
         <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
 
-    <div style="margin-top:6vh">
+    <div>
         <iframe src="home.html" id="iFrame" frameBorder="0" title="Iframe Example"></iframe>
     </div>
 
