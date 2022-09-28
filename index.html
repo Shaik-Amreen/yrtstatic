@@ -5,32 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+
         body {
             margin: 0;
-            font-family: Arial
+            font-family: 'Poppins'
         }
 
         .topnav {
             overflow: hidden;
-            background-color: #333;
             /* position: fixed; */
+            justify-content: center;
+            display: flex;
             top: 0;
             width: 100%;
+            border-bottom: 1px solid lightgrey;
         }
 
         .topnav a {
-            float: left;
-            display: block;
-            color: #f2f2f2;
+            /* float: left;
+            display: block; */
+            color: black;
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
-            font-size: 17px;
+            font-size: 1rem;
         }
 
         .active {
-            background-color: #04AA6D !important;
-            color: white;
+            color: black !important;
+            font-weight: 700 !important;
         }
 
         .topnav .icon {
@@ -43,13 +49,12 @@
         }
 
         .dropdown .dropbtn {
-            font-size: 17px;
+            font-size: 1rem;
             border: none;
             outline: none;
-            color: white;
             padding: 14px 16px;
-            background-color: inherit;
-            font-family: inherit;
+            background-color: white;
+            font-family: 'Poppins';
             margin: 0;
         }
 
@@ -58,7 +63,7 @@
         .dropdown-content {
             display: none;
             position: absolute;
-            background-color: #f9f9f9;
+            background-color: white;
             min-width: 160px;
             box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
             z-index: 10;
@@ -75,8 +80,8 @@
 
         .topnav a:hover,
         .dropdown:hover .dropbtn {
-            background-color: #555;
-            color: white;
+            background-color: whitesmoke !important;
+            color: black;
         }
 
         .dropdown-content a:hover {
@@ -169,8 +174,8 @@
         }
 
         iframe {
-            width: 98.9vw;
-            height: 97vh;
+            width: 100vw;
+            height: 92.8vh;
             margin: 0;
             position: absolute;
             z-index: -1;
@@ -179,7 +184,7 @@
     <script>
         function changeActive(currentNavName, fileName) {
             console.log(currentNavName)
-            let navData = ['homenav', 'bussinessnav', 'contactnav', 'aboutnav']
+            let navData = ['homenav', 'aboutnav', 'bussinessnav', 'careersnav', 'investorRelationsNav', 'contactnav',]
             navData.forEach(e => document.getElementById(e).classList.remove("active"))
             document.getElementById(currentNavName).classList.add("active");
             console.log(document.getElementById(currentNavName).classList)
@@ -193,8 +198,7 @@
 
     <div class="topnav" id="myTopnav">
         <a href="#home" onclick="changeActive('homenav','home.html')" id="homenav" class="active">Home</a>
-        <a href="#bussiness" onclick="changeActive('bussinessnav','Bussiness.html')" id="bussinessnav">Bussiness</a>
-        <a href="#contact" onclick="changeActive('contactnav','contact.html')" id="contactnav">Contact</a>
+        <!-- <a href="#bussiness" onclick="changeActive('bussinessnav','Bussiness.html')" id="bussinessnav">Bussiness</a> -->
         <div class="dropdown">
             <button class="dropbtn" href="#about" id="aboutnav"
                 onclick="changeActive('aboutnav','./About/Overview.html')">
@@ -207,13 +211,36 @@
                 <a href="#" onclick="changeActive('aboutnav','./About/Directors.html')" id="aboutnav">Directors</a>
             </div>
         </div>
-
+        <div class="dropdown">
+            <button class="dropbtn" id="bussinessnav"
+                onclick="changeActive('bussinessnav','./Bussiness/Overview.html')">
+                Bussiness
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#" onclick="changeActive('bussinessnav','./Bussiness/Overview.html')"
+                    id="bussinessnav">Overview</a>
+                <a href="#" onclick="changeActive('bussinessnav','./Bussiness/Recruitment.html')"
+                    id="bussinessnav">Recruitment</a>
+                <a href="#" onclick="changeActive('bussinessnav','./Bussiness/Digitalmarketing.html')"
+                    id="bussinessnav">Digital marketing</a>
+                <a href="#" onclick="changeActive('bussinessnav','./Bussiness/Backendverification.html')"
+                    id="bussinessnav">Backend verification</a>
+                <a href="#" onclick="changeActive('bussinessnav','./Bussiness/Productdevelopment.html')"
+                    id="bussinessnav">Productdevelopment</a>
+                <a href="#" onclick="changeActive('bussinessnav','./Bussiness/Sass.html')" id="bussinessnav">Sass</a>
+            </div>
+        </div>
+        <a href="#careers" onclick="changeActive('careersnav','careers.html')" id="careersnav">Careers</a>
+        <a href="#InvestorRelations" onclick="changeActive('investorRelationsNav','InvestorRelations.html')"
+            id="investorRelationsNav">Investor Relations</a>
+        <a href="#contact" onclick="changeActive('contactnav','contact.html')" id="contactnav">Contact</a>
 
         <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
 
     <div>
-        <iframe src="home.html" id="iFrame" frameBorder="0" title="Iframe Example"></iframe>
+        <iframe class="table-responsive" src="home.html" id="iFrame" frameBorder="0" title="Iframe Example"></iframe>
     </div>
 
     <script>
