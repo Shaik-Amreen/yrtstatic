@@ -3,6 +3,11 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <script src="https://kit.fontawesome.com/913e17331f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
@@ -21,6 +26,7 @@
             display: flex;
             top: 0;
             width: 100%;
+            padding: 0rem;
             border-bottom: 1px solid lightgrey;
         }
 
@@ -192,10 +198,22 @@
             // console.log(document.getElementById(currentNavName).classList)
         }
     </script>
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <!-- <script>
+        $("#iFrame").load(function () {
+            $("#iFrame1").load();
+        });
+    </script> -->
+
 </head>
 
 <body>
     <div class="topnav" id="myTopnav">
+        <span style='float:left;position:fixed;left:3rem;padding:0;margin-top: -0.3rem;'>
+            <img src="./assets/tablogo.jpg" style='height:4rem;width:4rem' />
+            <img src="./assets/logo.png" style='height:4rem;width:10rem' />
+        </span>
         <a href="#home" onclick="changeActive('homenav','home.html')" id="homenav" class="active">Home</a>
         <!-- <a href="#bussiness" onclick="changeActive('bussinessnav','Bussiness.html')" id="bussinessnav">Bussiness</a> -->
         <div class="dropdown">
@@ -226,7 +244,8 @@
                 <a href="#" onclick="changeActive('bussinessnav','./Bussiness/Recruitment.html')"
                     id="bussinessnav">Recruitment</a>
                 <a href="#" onclick="changeActive('bussinessnav','./Bussiness/Digitalmarketing.html')"
-                    id="bussinessnav">Digital marketing</a>
+                    id="bussinessnav">Digital
+                    marketing</a>
                 <a href="#" onclick="changeActive('bussinessnav','./Bussiness/Backendverification.html')"
                     id="bussinessnav">Backend verification</a>
                 <a href="#" onclick="changeActive('bussinessnav','./Bussiness/Productdevelopment.html')"
@@ -243,19 +262,25 @@
     </div>
 
     <div>
-        <iframe class="table-responsive" src="home.html" id="iFrame" frameBorder="0" title="Iframe Example"></iframe>
+        <iframe seamless class="table-responsive" loading="lazy" src="home.html" id="iFrame"
+            title="Iframe Example"></iframe>
+        <!-- <iframe
+            style="overflow-x: hidden;width: 100vw;height:65.1vh;padding:0;margin: 0;position: absolute;z-index: -1;"
+            src="footer.html" id="iFrame1"></iframe> -->
     </div>
+
 
     <script>
         function myFunction() {
             var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
+            if (x.class === "topnav") {
+                x.class += " responsive";
             } else {
-                x.className = "topnav";
+                x.class = "topnav";
             }
         }
     </script>
+
 
 </body>
 
