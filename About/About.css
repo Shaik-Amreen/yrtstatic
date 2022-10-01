@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Vadodara&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
+div {
+    font-family: 'Hind Vadodara', sans-serif;
+}
+
+
+.pop {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600
+}
+
+.halfback {
+    background: linear-gradient(to left,
+            #ffffff 0%,
+            #ffffff 70%,
+            #f5f5f5 30%,
+            #f5f5f5 50%);
+}
+
+.halfdirect {
+    background: linear-gradient(to left,
+            #ffffff 0%,
+            #ffffff 90%,
+            rgba(0, 109, 184, 255) 10%,
+            rgba(0, 109, 184, 255) 10%);
+    transition: transform .2s;
+    /* Animation */
+    cursor: pointer;
+}
+
+.halfbacktwo {
+    background: linear-gradient(to right,
+            #ffffff 0%,
+            #ffffff 30%,
+            #f5f5f5 70%,
+            #f5f5f5 50%);
+}
+
+.halfdirect:hover {
+    background: #006db8 !important;
+    transform: scale(1.1);
+    color: #ffffff !important
+        /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.milestone:hover {
+    transform: scale(1.1);
+
+    color: #006db8;
+}
+
+
+.aboutus {
+    background: url('../assets/aboutus.png');
+}
+
+.homeaboutus {
+    background: #B2D3E9;
+}
+
+.contactus {
+    background: #006db8
+}
+
+.trans {
+    transition: 50s ease-in;
+}
+
+
+#onhover {
+
+    /* width: 35vw; */
+    /* margin: 3rem;
+          margin-bottom: 0rem;
+           padding: 2rem;
+           text-align: left; */
+}
+
+#onhover :hover {
+    /* background: url('../assets/aboutus.png'); */
+    position: relative;
+    cursor: pointer;
+    /* width:50rem ; */
+    /* height:90rem ; */
+}

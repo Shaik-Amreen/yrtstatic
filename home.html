@@ -2,20 +2,43 @@
 <html lang="en">
 
 <head>
-    <title>Bootstrap Example</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <script src="https://kit.fontawesome.com/913e17331f.js" crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 
+        .navbarbtn1 {
+            text-decoration: none;
+            color: rgba(0, 109, 184, 255);
+            font-weight: bold;
+            padding: 0.5vw;
+        }
+
+        .navbarbtn1:hover {
+            text-decoration: none;
+            color: rgba(0, 109, 184, 255);
+            font-weight: 900;
+            transition: all 0.3s ease-in-out
+        }
     </style>
+
 </head>
 
 <body>
 
-    <div style="background-color: red;">
+    <div style="background-color: white; background: #B2D3E9;">
 
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
@@ -27,16 +50,79 @@
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
-                <div class="item active">
-                    <img src="./assets/business.gif" alt="Los Angeles" style="width:100%;height: 87vh;">
+                <div class="item active ">
+                    <div style="display:flex;background-color: white;">
+                        <div class=' ' style=' background-color: whiteSmoke;padding: 12rem 4rem ;flex-direction: column;display: flex;justify-content: center;align-items: center; width: 50%;border-top-right-radius: 60%
+                            ;border-bottom-right-radius: 50% '>
+                            <br />
+                            <h1 style=' font-family: Poppins ; color: #1b1c1e ; font-size: 4rem '>
+                                <a class="navbarbtn1"
+                                    style='font-family: Poppins ; color: #1b1c1e ; font-size: 4rem; text-decoration: none ;'
+                                    href="#business">
+                                    <strong>Bussiness</strong>
+                                </a>
+                            </h1>
+                            <br />
+                            <h4 style="text-align: center;">
+                                Ahead of competition in an
+                                ever-changing
+                                volatile market, the
+                                company’s recent focus has
+                                been to develop new
+                                things</h4>
+                        </div>
+                        <div class=' ' style="width:50%">
+                            <img src="./assets/business.gif" alt="Los Angeles" style="height: 87vh;">
+                        </div>
+                    </div>
                 </div>
+                <div class="item ">
+                    <div style="display:flex;background-color: #4d888e; height: 87vh; width: 100vw">
+                        <div class=' ' style="width:50vw">
+                            <img src="./assets/career.jpg" alt="Chicago" style="height: 58vh;">
+                        </div>
+                        <div class=' ' style=' background-color: whiteSmoke;padding: 12rem 4rem ;flex-direction: column;display: flex;justify-content: center;align-items: center; width: 50%;border-top-left-radius: 50%;border-top-left-radius: 50%
+                            ;border-bottom-left-radius: 50% ;background-color: #709FA4;'>
+                            <br />
+                            <h1 style=' font-family: Poppins ; color: #1b1c1e ; font-size: 4rem '>
+                                <a class="navbarbtn1"
+                                    style='font-family: Poppins ; color: #1b1c1e ; font-size: 4rem; text-decoration: none ;'
+                                    href="#business">
+                                    <strong>Career</strong>
+                                </a>
+                            </h1>
+                            <br />
+                            <h4 style=' text-align: center;color: white'>With a good perspective on history, we can have
+                                a
+                                better <br />understanding of the past
+                                and present, and thus a clear vision of the future</h4>
+                        </div>
 
-                <div class="item">
-                    <img src="./assets/career.jpg" alt="Chicago" style="width:100%;height: 87vh;">
+                    </div>
                 </div>
-
-                <div class="item">
-                    <img src="./assets/investment.gif" alt="New york" style="width:100%;height: 87vh;">
+                <div class="item ">
+                    <div style="display:flex;height: 87vh;background-color: white;">
+                        <div class=' ' style=' background-color: whiteSmoke;padding: 10rem 4rem ;flex-direction: column;display: flex;justify-content: center;align-items: center; width: 50%;border-top-right-radius: 60%
+                            ;border-bottom-right-radius: 50% 
+                            '>
+                            <br />
+                            <h1 style=' font-family: Poppins ; color: #1b1c1e ; font-size: 4rem '>
+                                <a class="navbarbtn1"
+                                    style='font-family: Poppins ; color: #1b1c1e ; font-size: 4rem; text-decoration: none ;color: rgba(0,109,184,255)'
+                                    href="#business">
+                                    <strong>Investor Relationships</strong>
+                                </a>
+                            </h1>
+                            <br />
+                            <h4 style=' text-align: center;color: black'>The most important quality for an
+                                investor<br /> is
+                                temperament, not intellect that YRT provides .</h4>
+                        </div>
+                        <div class=' ' style="width:30vw">
+                            <img src="./assets/investment.gif" alt="New york"
+                                style="height: 80vh; width: 55vw; margin-top: 7vh ">
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -51,6 +137,62 @@
             </a>
         </div>
 
+
+        <div class='row ' style=' margin: 8rem 4rem;padding: 0 ; margin-bottom: 0; padding-bottom: 8rem'>
+            <div class='col-6 shadow' style=' margin: 0 ; padding: 0 ; background: white; text-align: center;border-top-left-radius:7px
+                        ; border-bottom-left-radius: 7px '>
+                <img src="./assets/bussinessact.gif"
+                    style=' width: 30vw ; height:60vh ; border-top-left-radius: 7px ' />
+
+            </div>
+            <div class='col ' style=' background-color: whiteSmoke ; margin: 0 ; padding: 0 ; text-align: center ;
+                        padding-top: 3rem ; border-top-right-radius: 7px ; border-bottom-right-radius: 7px '>
+                <br></br><br></br>
+                <div class='' style=' font-size: 4rem ; font-family: poppins ; color: #006db8 '><strong>Bussiness
+                        Activities</strong></div>
+                <div class='' style=' margin: 2rem ; font-size: 1.5rem '>In order to provide clients with
+                    specialised
+                    solutions, YRT has developed expertise in the following industry segments:</div>
+                <br></br>
+
+                <div id="myCarousel1" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <!-- <ol class="carousel-indicators">
+                        <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel1" data-slide-to="1"></li>
+                        <li data-target="#myCarousel1" data-slide-to="2"></li>
+                    </ol> -->
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active ">
+                            <i style='color: rgba(0,109,184,255)' class="fa-solid fa-person-walking"></i> &nbsp;
+                            <!-- <FontAwesomeIcon style='color: rgba(0,109,184,255)  icon='faPersonWalking' />&nbsp; -->
+                            <span style='font-weight:bold'>RECRUITMENT</span>
+                        </div>
+                        <div class="item ">
+                            <i style='color: rgba(0,109,184,255)' class="fa-solid fa-lightbulb"></i> &nbsp;
+                            <span style='font-weight:bold'>PRODUCT DEVELOPMENT</span>
+                        </div>
+                    </div>
+
+                    <!-- Left and r ight controls -->
+                    <!-- <a class="left carousel-control" href="#myCarousel1" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel1" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a> -->
+                </div>
+
+                <!-- <br></br> --->
+                <br></br>
+                <NavLink class='btn btn-primary' style=' box-shadow: none ; background-color: #006db8 '
+                    to="yesrealtechnologies/business">All Bussiness Activities</NavLink>
+            </div><br></br><br></br>
+        </div>
     </div>
 
 </body>
