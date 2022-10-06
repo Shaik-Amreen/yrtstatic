@@ -8,6 +8,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
     </style>
 
+
 </head>
 <!-- import image from '
 import engineer from './assets/engineer.pdf'
@@ -20,7 +21,7 @@ import cto from './assets/cto.pdf' -->
             <img src='./assets/careers.gif' style=" height: 370px;width: 350px " />
 
         </div>
-        <div class="col" style=" text-align: 'left';margin: 1rem"><br /><br /><br /><br />
+        <div class="col" style=" text-align: justify;margin: 1rem"><br /><br /><br /><br />
             <h1 style=" font-family: 'Quicksand' ">Yeah ! We have job vacancies</h1>
             <span>&nbsp;&nbsp;You are one click away to make your future bright . Make a smart move and <strong>JOIN
                     US</strong></span>
@@ -33,7 +34,7 @@ import cto from './assets/cto.pdf' -->
 
         <h2 style=" font-family: 'Quicksand' ">CURRENT OPENINGS </h2>
         <br />
-        <div class="row" style=" text-align: 'left' ">
+        <div class="row" style=" text-align: justify ">
 
             <div class="col card m-2 shadow border-0 p-4">
                 <span style=" font-family: 'Poppins' "><strong> React JS Developers
@@ -122,7 +123,7 @@ import cto from './assets/cto.pdf' -->
 
 
 
-        <div class="row" style=" text-align: 'left' ">
+        <div class="row" style=" text-align: justify ">
 
 
             <div class="col card m-2 shadow border-0 p-4">
@@ -158,7 +159,7 @@ import cto from './assets/cto.pdf' -->
 
                     </strong></span>
 
-                <span style=" font-size: 0.9rem;margin-top: 0.4rem ;text-align: 'left' ">
+                <span style=" font-size: 0.9rem;margin-top: 0.4rem ;text-align: justify ">
                     Prior Experience in Startups, Negotiation Skills, Growth roadmap and innovations, Architect,
                     Engineer hunting and team growth management, Product Management, Strategic Thinking, Managing
                     Talent, Managing Innovation, Managing Priorities
@@ -174,14 +175,14 @@ import cto from './assets/cto.pdf' -->
                 <span style=" font-family: 'Poppins' "><strong> Chief Technology Officer
 
                     </strong></span>
-                <span style=" font-size: '0.8rem';margin-top: '0.4rem' ;color: grey ;letter-spacing: '0.02rem';
+                <span style=" font-size: 0.8rem;margin-top: 0.4rem ;color: grey ;letter-spacing: 0.02rem;
                         margin-left: '2rem' "> EXPERIENCE<br />
                     <strong style=" color: 'black' "> 10<sup>+</sup> Years
 
 
                     </strong></span>
 
-                <span style=" font-size: 0.9rem;margin-top: 0.4rem ;text-align: 'left' ">
+                <span style=" font-size: 0.9rem;margin-top: 0.4rem ;text-align: justify ">
                     Prior Experience in Startups, Negotiation Skills, Growth roadmap and innovations, Architect,
                     Servers, Cybersecurity, Tech & Coding Skills (Full Stack), team growth management, Product
                     Management, Team Management Skills, Strategic Thinking, Managing Talent, Managing Innovation,
@@ -194,9 +195,11 @@ import cto from './assets/cto.pdf' -->
                  <div style=" margin-left: 3rem" ;color: 'rgba(0,109,184,255)' "> <strong
                         onClick={()=>{openwebpage('../assests/cto.pdf')">Know more</strong>
             </div>  -->
-                <div style=" margin-left: 13rem;color: 'rgba(0,109,184,255)' "> <strong><a href='./assets/cto.pdf'
-                            target=" _blank" style=" cursor: 'pointer';text-decoration: 'none';color: 'black' ">Know
-                            more</a></strong></div>
+                <div id="ctokm" style=" margin-left: 12.5rem;color: rgba(0,109,184,255) "> <strong><a target=" _blank"
+                            style=" cursor: pointer;text-decoration: none;color: black " onclick="cto()">know more
+                            <!-- <span id="cto-knowmore" style="display:block">know more</span>
+                            <span id="cto-knowless" style="display:none">know less</span> -->
+                        </a></strong></div>
 
 
             </div>
@@ -204,14 +207,14 @@ import cto from './assets/cto.pdf' -->
             <div class="col card m-2 shadow border-0 p-4">
                 <span style=" font-family: 'Poppins' "><strong> Engineering Manager
                     </strong></span>
-                <span style=" font-size: '0.8rem';margin-top: '0.4rem' ;color: grey ;letter-spacing: '0.02rem';
+                <span style=" font-size: 0.8rem;margin-top: 0.4rem ;color: grey ;letter-spacing: 0.02rem;
                 margin-left: '2rem' "> EXPERIENCE<br />
                     <strong style=" color: 'black' "> 10<sup>+</sup> Years
 
 
                     </strong></span>
 
-                <span style=" font-size: 0.9rem;margin-top: 0.4rem ;text-align: 'left' ">
+                <span style=" font-size: 0.9rem;margin-top: 0.4rem ;text-align: justify">
                     Prior Experience in Startups, Negotiation Skills, Growth roadmap and innovations, Architect,
                     Servers, MVP (Minimum Viable Product) and DevOps issues, team growth management, Product Management,
                     Team Management Skills, Strategic Thinking, Managing Talent, Managing Innovation, Managing
@@ -221,9 +224,11 @@ import cto from './assets/cto.pdf' -->
 
                 </span>
                 <br />
-                <div style=" margin-left: 3rem ;color: 'rgba(0,109,184,255)' "> <strong><a href='./assets/engineer.pdf'
-                            target=" _blank" style=" cursor: 'pointer';text-decoration: 'none';color: 'black' ">Know
-                            more</a></strong>
+                <div style=" margin-left: 12.5rem ;color: rgba(0,109,184,255) "> <strong><a target=" _blank"
+                            style=" cursor: pointer;text-decoration: none;color: black " onclick="em()">know more
+                            <!-- <span id="em-knowmore" style="display:block">know more</span>
+                            <span id="em-knowless" style="display:none">know less</span> -->
+                        </a></strong>
                 </div>
 
             </div>
@@ -231,12 +236,219 @@ import cto from './assets/cto.pdf' -->
 
         </div>
 
+        <div class=" row card  shadow border-0 p-4" id="cto" style="display:none">
+            <span style=" font-family: 'Poppins';text-align: center; "><strong> Chief Technology Officer
+
+                </strong></span>
+            <span style=" font-size: '0.8rem';margin-top: '0.4rem' ;color: grey ;letter-spacing: '0.02rem';
+                                margin-left: '2rem' "> EXPERIENCE :
+                <strong style=" color: 'black' "> 10<sup>+</sup> Years
+
+
+                </strong></span>
+
+            <span style=" font-size: 0.9rem;margin-top: 0.4rem ;text-align: justify ">
+                Prior Experience in Startups, Negotiation Skills, Growth roadmap and innovations, Architect,
+                Servers, Cybersecurity, Tech & Coding Skills (Full Stack), team growth management, Product
+                Management, Team Management Skills, Strategic Thinking, Managing Talent, Managing Innovation,
+                Managing Priorities.
+
+
+            </span>
+            <br />
+            <span style="font-family: 'Quicksand'">
+                <strong>HIRING Chief Technology Officer (CTO)</strong><br>
+            </span>
+
+
+            <span style=" font-size: 0.9rem;margin-top: 0.4rem ;text-align: justify ">
+                Yesreal Technologies Private Limited is a software products enterprise focused on technology
+                driven solutions in the areas of recruitment, talent optimization, skill development, and
+                network-optimized retention for academic institutions. Yesreal Technologies Private Limited
+                through its flagship product – topfaculty.com, provides a network-centric toolkit to develop
+                faculty members, research associates, and academic activity with all key compliance and
+                performance management objectives in mind.
+                A startup passes through different phases before it reaches an elevated growth stage. Chief
+                Technology Officer (CTO) duties differ at every stage according to the changing dynamics of
+                a startup.
+                However, the role becomes more mature after passing every phase, but at the first few
+                stages, CTO needs to be practical, while the last stage demands leadership and management
+                skills.
+                YRT Chief Technology Officer leads the technology / Software engineering department in YRT
+                and he is responsible for developing technology and process to develop better product
+                (topfaculty.com & YRT)
+                CTO will set the technical direction and Architect for topfaculty.com development, create and
+                execute a strategic plan for growth and development of topfaculty.com identify the exact
+                resources necessary to put the plan into action and oversee the entire process from start to
+                finish
+            </span><br>
+
+            <span style="font-family: 'Quicksand'">
+                <strong>Skills Should Have YRT CTO:
+                </strong><br>
+            </span>
+
+            <span style="">
+                <ul>
+                    <li>Prior Experience in Startups</li>
+                    <li>Negotiation Skills</li>
+                    <li>Growth roadmap and innovations</li>
+                    <li>Architect</li>
+                    <li>Servers</li>
+                    <li>Cybersecurity</li>
+                    <li>Tech & Coding Skills (Full Stack)</li>
+                    <li>QA and product testing</li>
+                    <li>Problem-Solving Skills</li>
+                    <li>MVP (Minimum Viable Product) and DevOps issues</li>
+                    <li>Engineer hunting and team growth management</li>
+                    <li>React, Node, AWS, Google Cloud</li>
+                    <li>Product Management</li>
+                    <li>Team Management Skills</li>
+                    <li>Strategic Thinking</li>
+                    <li>Managing Talent</li>
+                    <li>Managing Innovation</li>
+                    <li>Managing Priorities</li>
+                </ul>
+            </span>
+            <span style="font-family: 'Quicksand'">
+                <strong>Responsibilities of YRT CTO:
+                </strong><br>
+            </span>
+
+            <span style=" font-size: 0.9rem;margin-top: 0.4rem ;text-align: justify ">
+                The role of a YRT CTO is not the same as a CTO at a big, well-established company. Of course,
+                the main scope of responsibilities stays the same – both are in charge of the technological
+                development of the company. Still, the role of a YRT CTO is more associated with rapid growth
+                rather than long-term planning. YRT demand a different approach, where the survival of the
+                company rests on their ability to adapt and roll out new ideas quickly.<br>
+                YRT CTO has both project management and technical skills. Even though they often take a
+                backseat in terms of writing code, a CTO should have a thorough understanding of the
+                development process to lead a software development team & Architect.
+
+            </span>
+
+            <ol type="1">
+                <li>Manage the Team</li>
+                <li>Define the Technology Stack</li>
+                <li>Manage Operations</li>
+                <li>Track Performance</li>
+                <li>Have a Technical Vision</li>
+                <li>Represent the Company</li>
+            </ol>
+            <span style=" font-size: 0.9rem;margin-top: 0.4rem ;text-align: justify ">
+                Interested applicants please submit your updated profile to : <strong> jobs@yesrealtech.com</strong><br>
+                Short listed applicants will be informed about the interview dates by phone and through email.
+            </span>
+        </div>
+
+        <div class=" row card  shadow border-0 p-4" id="em" style="display:none">
+            <span style=" font-family: 'Poppins';text-align: center; "><strong> Engineering Manager hiring Bengaluru
+                    based STARTUP<br>
+                    Yesreal Technologies Private limited (YRT)
+
+                </strong></span>
+
+            <span style=" font-size: 0.9rem;margin-top: 0.4rem ;text-align: justify ">
+                Yesreal Technologies Private Limited is a software products enterprise focused on technology driven
+                solutions in the areas of recruitment, talent optimization, skill development, and network-optimized
+                retention for academic institutions. Yesreal Technologies Private Limited through its flagship product,
+                topfaculty.com, provides a network-centric toolkit to develop faculty members, research associates,
+                and academic activity with all key compliance, and performance management objectives in mind.<br><br>
+                A startup passes through different phases before it reaches an elevated growth stage. Engineering
+                Manager duties differ at every stage according to the changing dynamics of a startup. However, the
+                role becomes more mature after passing every phase, but at the first few stages, Engineering
+                Manager needs to be practical, while the last stage demands leadership and management skills.<br><br>
+                YRT Engineering Manager leads the technology / Software engineering department in YRT and he is
+                responsible for developing technology and process to develop better product (topfaculty.com & YRT)
+                Engineering Manager will set the technical direction and Architect or topfaculty.com development,
+                create and execute a strategic plan for growth and development of topfaculty.com identify the exact
+                resources necessary to put the plan into action and oversee the entire process from start to finish.
+            </span>
+            <br />
+            <span style="font-family: 'Quicksand'">
+                <strong>Skills Should Have YRT Engineering Manager:</strong><br>
+            </span>
+
+            <ul>
+                <li>Prior Experience in Startups</li>
+                <li>Negotiation Skills</li>
+                <li>Growth roadmap and innovations</li>
+                <li>Architect</li>
+                <li>Servers</li>
+                <li>Cybersecurity</li>
+                <li>Tech & Coding Skills (Full Stack)</li>
+                <li>QA and product testing</li>
+                <li>Problem-Solving Skills</li>
+                <li>MVP (Minimum Viable Product) and DevOps issues</li>
+                <li>Engineer hunting and team growth management</li>
+                <li>React, Node, AWS, Google Cloud</li>
+                <li>Product Management</li>
+                <li>Team Management Skills</li>
+                <li>Strategic Thinking</li>
+                <li>Managing Talent</li>
+                <li>Managing Innovation</li>
+            </ul>
+            <span style="">
+                <strong>Responsibilities of YRT Engineering Manager:
+                </strong><br>
+            </span>
+
+            <span style=" font-size: 0.9rem;margin-top: 0.4rem ;text-align: justify ">
+                The role of a YRT Engineering Manager is not the same as an Engineering Manager at a big,
+                well-established
+                company. Of
+                course, the main scope of responsibilities stays the same – both are in
+                charge of the technological development of the company. Still, the role of a YRT Engineering Manager
+                is more associated with rapid growth rather than long-term planning. YRT demand a different
+                approach, where the survival of the company rests on their ability to adapt and roll out new ideas
+                quickly.<br>
+                YRT Engineering Manager has both project management and technical skills. Even though they often
+                take a backseat in terms of writing code, an Engineering Manager should have a thorough
+                understanding of the development process to lead a software development team & Architect.
+            </span><br>
+
+
+            <ol type="1">
+                <li>Manage the Team</li>
+                <li>Define the Technology Stack</li>
+                <li>Manage Operations</li>
+                <li>Track Performance</li>
+                <li>Have a Technical Vision</li>
+                <li>Represent the Company</li>
+            </ol>
+            <span style=" font-size: 0.9rem;margin-top: 0.4rem ;text-align: justify ">
+                Interested applicants please submit your updated profile to : <strong> jobs@yesrealtech.com</strong><br>
+                Short listed applicants will be informed about the interview dates by phone and through email.
+            </span>
+        </div>
 
 
 
 
 
 
+        <script>
+            function cto() {
+                var x = document.getElementById("cto")
+                var y = document.getElementById("em")
+                // var z = document.getElementById("cto-knowmore")
+                // var p = document.getElementById("cto-knowless")
+                // p.innerHTML = 'know more'
+                // z.innerHTML = 'know less'
+                // z.style.display == 'block' ? (z.style.display == 'none', p.style.display == 'block') : (z.style.display == 'block', p.style.display == 'none');
+                x.style.display == 'none' ? (x.style.display = 'grid', y.style.display = 'none') : x.style.display = 'none';
+            }
+            function em() {
+                var x = document.getElementById("em")
+                var y = document.getElementById("cto")
+                // var z = document.getElementById("emkm")
+                // var p = document.getElementById("ctokm")
+                // p.innerHTML = 'know more'
+                // z.innerHTML = 'know less'
+                x.style.display == 'none' ? (x.style.display = 'grid', y.style.display = 'none') : x.style.display = 'none';
+            }
+
+        </script>
 
 
 
